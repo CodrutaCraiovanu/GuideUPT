@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ScannedBarcodeActivity">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+
+            <TextView
+                android:id="@+id/view_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/scan_and_enjoy_the_audio_guide"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+            <View
+                android:id="@+id/separator1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_text" />
+
+            <SurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_above="@+id/btnPlayVideo"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/separator1" />
+
+            <TextView
+                android:id="@+id/txtBarcodeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/no_barcode_detected"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                app:layout_constraintLeft_toLeftOf="@id/surfaceView"
+                app:layout_constraintRight_toRightOf="@id/surfaceView"
+                app:layout_constraintTop_toTopOf="@id/surfaceView" />
+
+            <View
+                android:id="@+id/separator2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/surfaceView" />
+
+            <ImageButton
+                android:id="@+id/btnPlayVideo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/round_small_button"
+                android:backgroundTint="@color/colorAccent"
+                android:src="@drawable/baseline_ondemand_video_24"
+                app:layout_constraintEnd_toStartOf="@id/btnScanAgainQrCode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/separator2" />
+
+            <TextView
+                android:id="@+id/textPlayVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play_video"
+                android:textColor="@color/grey"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@id/btnPlayVideo"
+                app:layout_constraintStart_toStartOf="@id/btnPlayVideo"
+                app:layout_constraintTop_toBottomOf="@id/btnPlayVideo" />
+
+            <ImageButton
+                android:id="@+id/btnScanAgainQrCode"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/round_small_button"
+                android:backgroundTint="@color/colorAccent"
+                android:src="@drawable/baseline_qr_code_scanner_white_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnPlayVideo"
+                app:layout_constraintTop_toBottomOf="@id/separator2" />
+
+            <TextView
+                android:id="@+id/textScanAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_new_qr_code"
+                android:textColor="@color/grey"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@id/btnScanAgainQrCode"
+                app:layout_constraintStart_toStartOf="@id/btnScanAgainQrCode"
+                app:layout_constraintTop_toBottomOf="@id/btnScanAgainQrCode" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

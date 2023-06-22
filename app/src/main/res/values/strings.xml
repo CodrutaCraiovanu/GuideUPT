@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GuideUPT</string>
+    <string name="exit">Exit</string>
+    <string name="app_exit">Press again to exit the app</string>
+    <string name="welcome_to_our_virtual_museum">Welcome to our virtual museum</string>
+    <string name="text_internet_dialog">No internet connection found. Please check your connection.</string>
+    <string name="btn_internet_dialog">Try again!</string>
+    <string name="scan_qr_code">Scan QR CODE</string>
+    <string name="play_video">Play video</string>
+    <string name="no_barcode_detected">No Barcode Detected</string>
+    <string name="scan_new_qr_code">Scan again</string>
+    <string name="scan_and_enjoy_the_audio_guide">Scan and enjoy the audio guide</string>
+    <string name="enjoy_the_audio">Enjoy the audio guide</string>
+    <string name="home">Home</string>
+</resources>

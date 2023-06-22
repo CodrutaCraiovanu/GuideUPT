@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <!-- Main Theme -->
+    <color name="colorPrimary">#1A1A1B</color>
+    <color name="colorPrimaryDark">#1A1A1B</color>
+    <color name="colorAccent">#CCC269</color>
+    <color name="gradientStart">#673AB7</color>
+    <color name="gradientEnd">#8D57EC</color>
+    <color name="grey">#434242</color>
+    <color name="grey_solid">#12000000</color>
+    <color name="grey_background">#4FF1EBEB</color>
+    <color name="grey_light">#D3C5C5C5</color>
+    <color name="message_grey">#70C5C5C5</color>
+    <color name="black">#000</color>
+    <color name="green">#3A9A3E</color>
+    <color name="orange">#FF9800</color>
+    <color name="pink">#B84A70</color>
+    <color name="brown">#592E20</color>
+    <color name="red">#C12115</color>
+    <color name="yellow">#B5A93A</color>
+</resources>
