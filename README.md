@@ -15,7 +15,7 @@ Paşii de compilare:
 3. Proiectul trebuie importat. În Android Studio, utilizatorii trebuie să selecteze „Importă proiect”.
 
 
-4. Utilizatorii trebuie să dea click pe meniul „Build” şi să selectezee „Make Project” pentru a sincroniza proiectul. Android Studio va compila codul.
+4. Utilizatorii trebuie să dea click pe meniul „Build” şi să selecteze „Make Project” pentru a sincroniza proiectul. Android Studio va compila codul.
 
 
 
